@@ -39,6 +39,7 @@ _ui_verified.png
 
 # —— 开发中间产物（对比图、备份帧、自检截图）——
 src/桌面分身/_*
+src/桌面分身/selfcheck.png
 src/桌面分身/selfcheck_*
 src/桌面分身/exprcheck_*
 src/_apk/_*
