@@ -1,4 +1,4 @@
-﻿# 只把源码与美术素材进库，个人记录、日志、备份、模型一律忽略
+﻿# 只把源码与成品美术素材进库；个人记录、日志、备份、模型、调试产物一律忽略
 *
 !*/
 !.gitignore
@@ -16,7 +16,7 @@
 !*.jpeg
 !*.svg
 
-# —— 明确排除（个人数据 / 运行日志 / 备份 / 发布产物）——
+# —— 明确排除：个人数据 / 运行日志 / 备份 / 发布产物 ——
 _归档/**
 _待接入形象/**
 _v22chk/**
@@ -36,3 +36,22 @@ _ui_verified.png
 道-App内嵌网页_备份.html
 .github_token
 .github_remote
+
+# —— 开发中间产物（对比图、备份帧、自检截图）——
+src/桌面分身/_*
+src/桌面分身/selfcheck_*
+src/桌面分身/exprcheck_*
+src/_apk/_*
+tools/_*
+
+# —— 一次性系统清理脚本（跑过一次就不再需要）——
+tools/uninstall_*
+tools/takeown_*
+tools/fast_delete_*
+tools/clean_lenovo_*
+tools/probe_*
+tools/remove_powertaskbar.ps1
+tools/kill_powertaskbar.ps1
+tools/finish_tray.ps1
+tools/startup_tidy.ps1
+tools/tidy_startup_and_apps.ps1
